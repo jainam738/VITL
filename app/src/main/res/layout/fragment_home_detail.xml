@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/pink"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Vitl"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_25"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/dimen_5"
+                android:paddingBottom="@dimen/dimen_5"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_15"
+                android:background="@drawable/btn_square_border_red"
+                android:text="BUY"
+                android:textColor="@color/pink"
+                android:gravity="center"
+                android:textSize="@dimen/txt_16"/>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/image_35"
+                android:layout_height="@dimen/image_35"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_view"
+                android:layout_width="@dimen/image_30"
+                android:layout_height="@dimen/image_30"
+                android:padding="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_35"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_sort"
+                android:src="@drawable/menu"
+                android:tint="@color/white"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_sort"
+                android:layout_width="@dimen/image_30"
+                android:layout_height="@dimen/image_30"
+                android:padding="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_35"
+                android:layout_toLeftOf="@+id/iv_filter"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sort"
+                android:tint="@color/white"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="@dimen/image_30"
+                android:layout_height="@dimen/image_30"
+                android:padding="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/filter"
+                android:tint="@color/white"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgound"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/fram_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!--        <com.google.android.gms.maps.MapView-->
+        <!--            android:id="@+id/map"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_map"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>
+
+</LinearLayout>

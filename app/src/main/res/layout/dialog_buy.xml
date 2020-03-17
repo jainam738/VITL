@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_150"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_square_border_red"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: "
+            android:textColor="@color/pink"
+            android:textSize="@dimen/txt_20"/>
+
+        <TextView
+            android:id="@+id/tv_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/txt_18"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center"
+        android:background="@drawable/btn_square_black"
+        >
+
+        <ImageView
+            android:id="@+id/iv_remove"
+            android:layout_width="@dimen/image_45"
+            android:layout_height="@dimen/image_30"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:tint="@color/black"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/image_45"
+            android:layout_height="@dimen/image_30"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_20"
+        android:background="@drawable/btn_bg_red"
+        android:text="Proceed"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_20"/>
+
+</LinearLayout>

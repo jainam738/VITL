@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_map"
+        android:checked="false"
+        android:icon="@drawable/home"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/notification"
+        android:title="Notification" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/nav_profile"-->
+    <!--        android:icon="@drawable/user"-->
+    <!--        android:title="Profile" />-->
+
+    <!--    <item-->
+    <!--        android:id="@+id/nav_filter"-->
+    <!--        android:icon="@drawable/filterlist"-->
+    <!--        android:title="VendorLogin" />-->
+
+</menu>

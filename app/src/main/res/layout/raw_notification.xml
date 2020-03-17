@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_chatlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:id="@+id/row_iv_item_pic"
+            android:layout_width="@dimen/image_45"
+            android:layout_height="@dimen/image_45"
+            android:src="@drawable/notification"
+            android:tint="@color/gray"
+           />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/row_iv_item_pic"
+            android:text="Title"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_16"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_dec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/row_iv_item_pic"
+            android:text="# klajlg aijgljllgaggag"
+            android:textSize="@dimen/txt_14"
+            android:textColor="@color/gray"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

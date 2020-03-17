@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/image_45"
+            android:layout_height="@dimen/image_45"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_gravity="center"
+            android:src="@drawable/img3" />
+
+        <TextView
+            android:id="@+id/tv_usernmae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="Chirs Howell"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            android:drawableTint="@color/yellow"
+            android:padding="@dimen/dimen_5"
+            android:text="4.5"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt_16"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:text="Nice drink, I love it. riations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:background="@color/gray"/>
+
+</LinearLayout>

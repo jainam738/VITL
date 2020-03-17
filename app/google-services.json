@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "254812693630",
+    "firebase_url": "https://vitl-251210.firebaseio.com",
+    "project_id": "vitl-251210",
+    "storage_bucket": "vitl-251210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254812693630:android:05219d32ca28ad0d",
+        "android_client_info": {
+          "package_name": "com.appleto.Vitl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254812693630-0ap24iv3kr177agpff07kl0877nem1mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appleto.Vitl",
+            "certificate_hash": "b9e45e7fa28402a6522eaae1a5f5c88cadb7e589"
+          }
+        },
+        {
+          "client_id": "254812693630-t2gf914vbgik2gmlrm9tphplb56pqq0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appleto.Vitl",
+            "certificate_hash": "e2f836630d3ca724e5db649b787ae76d030d35e2"
+          }
+        },
+        {
+          "client_id": "254812693630-k1185n801nc869nb7o26htim2r98fufc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appleto.Vitl",
+            "certificate_hash": "df527b70328ff1d73bea97af0c445c8eef77443f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsUu6wed6mNmRm1N_vwzBEFcrvK5XhdMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254812693630-eb3rufp5l5ucoubiga1kndtup63omdjf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.appleto.Vitl"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

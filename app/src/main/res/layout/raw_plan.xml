@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_price_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/edt_square_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_plan_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="Silver Membership"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_22"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:text="$"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_18"
+                android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_plan_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_60"
+            android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_plan_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="Perfect for small to medium businesses"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_valid_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="Valide for one year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="@dimen/image_40"
+            android:layout_height="@dimen/image_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rate this item"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_20"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/image_35"
+            android:layout_height="@dimen/image_35"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.RatingBar"/>
+
+    <EditText
+        android:id="@+id/edt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:singleLine="false"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:hint="Write comment hear"
+        android:textSize="@dimen/txt_18"
+        android:textColor="@color/black"
+        android:textStyle="normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:padding="@dimen/dimen_10"
+            android:background="@color/black"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
